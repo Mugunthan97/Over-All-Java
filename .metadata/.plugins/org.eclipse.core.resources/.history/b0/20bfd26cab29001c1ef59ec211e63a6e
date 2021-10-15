@@ -1,0 +1,36 @@
+package org.sample;
+
+import java.io.IOException;
+
+public class Demo extends BaseClass {
+	
+	public static void main(String[] args) throws Throwable {
+		
+		openbroswer();
+		openUrl("https://en-gb.facebook.com/");
+		broswerMaximize();
+		snap("FbHomePage");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

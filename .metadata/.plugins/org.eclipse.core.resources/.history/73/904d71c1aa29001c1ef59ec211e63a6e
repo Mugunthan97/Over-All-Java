@@ -1,0 +1,33 @@
+package org.sample;
+
+public class Demo extends BaseClass {
+	
+	public static void main(String[] args) {
+		
+		openbroswer();
+		openUrl("https://en-gb.facebook.com/");
+		broswerMaximize();
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

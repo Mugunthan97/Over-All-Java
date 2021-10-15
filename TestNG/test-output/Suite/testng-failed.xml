@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="org.crossrun.Sample">
+        <methods>
+          <include name="tc2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.crossrun.Sample -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+  <test name="Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="org.crossrun.Sample">
+        <methods>
+          <include name="tc2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.crossrun.Sample -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

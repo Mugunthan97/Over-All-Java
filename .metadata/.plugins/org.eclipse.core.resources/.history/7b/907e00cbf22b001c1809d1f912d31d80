@@ -1,0 +1,22 @@
+package org.swiggytest;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.seleniumhq.jetty9.io.ManagedSelector.SelectorUpdate;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Swiggy {
+
+	
+	private void SwiggyLogin() {
+
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver =new ChromeDriver();
+		
+		
+		
+		
+		
+	}
+}

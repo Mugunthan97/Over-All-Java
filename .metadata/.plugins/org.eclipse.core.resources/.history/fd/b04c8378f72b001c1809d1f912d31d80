@@ -1,0 +1,43 @@
+package org.swiggytest;
+
+import java.io.IOException;
+
+import org.helper.BaseClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Swiggy extends BaseClass {
+
+	@Test(priority=1)
+	private void SwiggyLogin() throws Exception {
+
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.get("https://www.swiggy.com/");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//a[text()='Login']")).click();
+		WebElement mobile = driver.findElement(By.id("mobile"));
+		mobile.sendKeys(excelSheet(0, 1));
+		driver.findElement(By.xpath("(//a[text()='Login'])[2]")).click();
+		driver.close();
+	}
+
+	@Test(priority=2)
+	private void SwiggySignup() throws Exception {
+
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.get("https://www.swiggy.com/");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//a[text()='Sign up']")).click();
+		driver.findElement(By.id("mobile")).sendKeys(excelSheet(0, 1));
+		
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package org.test1;
+
+public class Condition {
+
+	public static void main(String[] args) {
+		System.out.println(1);
+		System.out.println(2);
+		System.out.println(3);
+		System.out.println(4);
+		System.out.println(5);
+<<<<<<< HEAD
+		System.out.println(11);
+		System.out.println(12);
+=======
+		System.out.println(6);
+		System.out.println(7);
+>>>>>>> d45cb0ab04d3b9cb3593c165ea38e92bacc55f49
+	}
+}
